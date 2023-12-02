@@ -10,6 +10,7 @@ private:
     string ID;
     double salario;
     string tipo;
+    bool encontrado;
 
 public:
     empleado(string nombre = "", string iden = "", double salario = 0);
@@ -32,8 +33,11 @@ public:
     // Método para obtener el salario
     double getSalario();
 
-    // Método para mostrar datos generales del empleado
+    // Método para mostrar datos generales de los empleados
     void muestra();
+
+    // Método para mostrar los datos generales del empleado de acuerdo a su ID
+    void muestraPorID(string idBuscar);
 
     // Método para mostrar datos del empleado incluyendo salarios
     void muestraSalario();
