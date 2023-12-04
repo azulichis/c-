@@ -6,12 +6,13 @@ using namespace std;
 
 class Empleado {
 private:
-    string nombre; 
+    //Declaramos nuestros atributos
+    string nombre;
     string ID;
     double salario;
 
 public:
-    Empleado(string nombre = "", string iden = "", double salario = 0);
+    Empleado(string nombre = "", string iden = "", double salario = 0); //Inicializacion de parametros
 
     // Método para establecer el nombre del empleado
     void setNombre(string n);
